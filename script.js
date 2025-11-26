@@ -5,14 +5,14 @@ const accountInput = document.getElementById('account');
 
 function clearErrors(inputElement) {
     inputElement.addEventListener('input', function() {
-        inputElement.style.borderColor = "#e0e0e0";   
+        inputElement.style.borderColor = "#e0e0e0";
     });
 }
 
 clearErrors(usernameInput);
 clearErrors(phoneInput);
 clearErrors(accountInput);
-
+  
 form.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form from submitting normally
 
