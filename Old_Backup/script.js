@@ -13,7 +13,7 @@ clearErrors(usernameInput);
 clearErrors(phoneInput);
 clearErrors(accountInput);
   
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', function(event) { 
     event.preventDefault(); // Prevent form from submitting normally
 
     const username = usernameInput.value.trim();   // trim whitespace
