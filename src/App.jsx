@@ -65,7 +65,7 @@ function App() {
     const phoneError = getErrorMessage('phone', formData.phone);
     const accountError = getErrorMessage('account', formData.account);
 
-    // “” 這個會當false的
+    // '' 這個會當false的
     if (usernameError || phoneError || accountError) {
       setError({
         username: usernameError,
@@ -85,7 +85,7 @@ function App() {
         body: JSON.stringify(formData)
       });
       if (response.ok) {
-        alert("Sign up successful !")
+        alert("Sign up successful!")
         // 清空表單
         setFormData({ username: '', phone: '', account: '' });
         setError({ username: '', phone: '', account: '' });
